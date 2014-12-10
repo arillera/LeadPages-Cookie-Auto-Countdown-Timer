@@ -1,0 +1,54 @@
+{
+    "name": "Auto Timer Example",
+    "id": "Sample01",
+    "mobile": true,
+    "notes": "Initial",
+    "syntax": 4,
+    "version": 1.0,
+	"style": {
+        "replacements": [ 
+		{ "type": "font", "name": "Main Font", "find": "'Open Sans'" },
+		{ "type": "font", "name": "Title Font", "find": "'Roboto Slab'" },
+		{ "type": "color", "name": "Image Background", "find": "#fdfeff" },
+		{ "type": "color", "name": "Countdown Box", "find": "#3C3C3C" },
+		{ "type": "color", "name": "Countdown Numbers", "find": "#FAFAFA" },
+		{ "type": "color", "name": "Countdown Text", "find": "#FCFCFC" },
+		{ "type": "color", "name": "Countdown Text Shadow", "find": "#121212" },
+		{ "type": "color", "name": "Video Border", "find": "#191919" },
+		{ "type": "color", "name": "Button", "find": "#04A663" },
+		{ "type": "color", "name": "Button Hover", "find": "#EF4D00" },
+		{ "type": "color", "name": "Button Text", "find": "#fdfefe" },
+		{ "type": "color", "name": "Button Text Hover", "find": "#fdfefd" },
+		{ "type": "color", "name": "Social Section", "find": "#dddddd" },
+		{ "type": "color", "name": "Footer Section", "find": "#0A0A0A" },
+		{ "type": "color", "name": "Footer Text", "find": "#8E8E8E" }
+        ]
+	},
+    "elements": [
+		{ "id": "logo", "name": "Logo", "type": "image-link" },
+		{ "id": "countdown-container", "name": "Countdown Section", "type": "container" },
+		{ "id": "countdown","name": "Countdown","type": "countdown" },
+		{ "id": "days-text","name": "Days Text","type": "text"}, 
+        { "id": "hours-text","name": "Hours Text","type": "text"}, 
+        { "id": "minutes-text", "name": "Minutes Text","type": "text"}, 
+        { "id": "seconds-text", "name": "Seconds Text","type": "text"},
+		{ "id": "content-area-main", "name": "Video Section", "type": "container" },
+		{ "id": "upload-video", "name": "Video", "type": "video", "data": {"max-width": 725}, "max-height": 408},
+		{ "id": "button", "name": "Button", "type": "link" },
+		{ "id": "footer", "name": "Footer Section", "type": "container" },
+		{ "id": "footer-text", "name": "Footer Content", "type": "text" },
+		{ "id": "countdowncookie", "name": "Auto Countdown", "type": "dynamic","data": {"variables": ["countdowndays"]} }
+    ],
+	"variables": {
+    	"countdowndays": {
+        "variable": "countdowndays",
+        "dafault": "20",
+        "name": "Set the amount of days countdown timer cookie should default to. Default 20 days."
+    	},
+        "toDate": {
+            "variable": "toDate", 
+            "dafault": "2014/12/15 18:00:00 GMT-0400", 
+            "name": "Countdown Timer End - (Format: YYYY/MM/DD HH:MM:SS GMT-0400). 24 hour time format. GMT time format required. See greenwichmeantime.com to convert for your timezone."
+        }
+	}
+}

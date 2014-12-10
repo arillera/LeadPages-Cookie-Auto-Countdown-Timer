@@ -1,0 +1,103 @@
+body { font-family: 'Open Sans', sans-serif; background: #FFFFFF; font-size:16px;}
+a:focus {outline:none;}
+em {font-style:italic; font-weight:700}
+ul{list-style: none;padding-left:20px;}
+ul li{padding-left: 30px;line-height: 28px}
+/* ------------------ Main Page ------------------ */
+.main-page {display:inline-block;  background-color:#fdfeff; width:100%;}
+.main-bg { left: 0; overflow: hidden; position: absolute; z-index: 1; padding:0px;width:100%;}
+.main-bg img {max-width: 100%; width: 100%; height:854px;}
+.main-page .container { position: relative;  z-index: 2;}
+/* ------------------ Header ------------------ */
+.header {display:inline-block; width:100%; padding:20px 0 0 0;position: relative;z-index: 10;text-align: center;}
+.header img{display:block;margin:5px auto;margin-bottom:5px;}
+/* ------------------ Countdown ------------------ */
+.countdown-container {display: block;margin: 0 auto;position: relative;width: 325px;}
+.countdown-container ul.countdown {padding: 0;margin: 0;overflow: auto;position: relative;}
+.countdown-container ul.countdown li {float: left;display: inline-block;background:none;padding:0;text-align: center;margin-right: 20px;overflow: hidden;}
+.countdown-container ul.countdown li:last-child{margin-right:0;}
+.countdown-container ul.countdown li .time-wrap {background: #3C3C3C url('../img/timer-bg.png') repeat-x left top;min-width: 65px;height: 62px;border-radius: 6px 6px 0 0;padding: 0 2px;}
+.countdown-container ul.countdown li span {font-weight: 900;font-size: 36px;color: #FAFAFA;line-height: 60px;position: relative;text-align: center;letter-spacing: 3px;padding-left: 5px;}
+.countdown-container ul.countdown li p.timeRefDays,
+.countdown-container ul.countdown li p.timeRefHours,
+.countdown-container ul.countdown li p.timeRefMinutes,
+.countdown-container ul.countdown li p.timeRefSeconds {display: inline-block;font-weight: 600;color: #FCFCFC;text-transform: uppercase;font-size: 12px;text-align: center;margin: 2px auto ;letter-spacing: 1px;letter-spacing: 0;width: 54px;line-height: 17px;text-align:center;text-shadow: 0px 0px 2px #121212;}
+
+/* ------------------ Video Section ------------------ */
+.content-area {display:inline-block;  width: 100%;margin-top:10px;text-align: center;}
+.video{margin:0 auto;text-align: center;}
+.video-box{margin:0 auto;}
+.video-box > img, iframe{margin: 0 auto;text-align: center;border: 4px solid #191919;}
+.no-padding-left {padding-left:0px;}
+#upload-video iframe { max-width: 100%;}
+.download {background-color:#04A663; color:#fdfefe; font-size:24px; font-weight:800; padding:8px 30px; margin:30px 0; text-transform: uppercase;white-space: inherit;}
+.download:hover {background-color:#EF4D00; color:#fdfefd;}
+.download:focus {background-color:#EF4D00; color:#fffefd; outline:none;}
+/* ------------------ Text Content ------------------ */
+.sales-section{display: block;position: relative;z-index: 100;background:#fefefe;margin: 30px auto 0;padding:20px;border-top:2px solid #cecece;border-bottom:2px solid #cecece;}
+.text-content{max-width: 860px;color:#0c0c0c;}
+.text-content h1{font-weight: bold;}
+.text-content h2 {margin:0px 0 20px; padding:0; font-weight:800; color:#ff5300; line-height:32px; font-size:26px;  word-wrap: break-word;}
+.text-content h3{font-weight: bold;}
+.text-content ul{list-style: none;padding-left:20px;}
+.text-content ul li{padding-left: 30px;line-height: 28px}
+.txt-btn{text-align: center;}
+/* ------------------ Buy Section ------------------ */
+.buy {position:relative;z-index:10;background-color:#2a2a2b; padding:55px 0px 40px; text-align: center;color:#fdffff;}
+.buy h1{font-size:80px; font-weight:800; font-style:italic; line-height:75px; }
+.buy p {width:100%; text-align:center; margin:0px; word-wrap:break-word;font-size: 24px;}
+/* ------------------ Social Section ------------------ */
+.social {width:100%; background-color:#dddddd; padding:40px;position: relative;z-index: 10;}
+.social-sub { margin:0 auto;}
+.fb-like{margin-bottom:20px;margin-left:0;max-width:720px!important;overflow: hidden;}
+.facebook-like{ margin-bottom:35px;margin-left:0;}
+.pop-facebook{ position: relative; bottom: 7px;}
+.comments-container{max-width:100%!important;}
+.fb_iframe_widget {width:100%!important;}
+/* ------------------ Footer ------------------ */
+.footer{position: relative;background: #0A0A0A;min-height: 100px;display: block;color: #8E8E8E;z-index: 400;font-size: 14px;text-align: center;padding: 20px 0px;}
+.footer a{color: #8E8E8E;text-decoration: underline;}
+/* ------------------ Animations ------------------ */
+.download{
+	transition: all 0.15s ease-in-out;
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+}
+/* ------------------ Media Query------------------ */
+@media (max-width:1200px){
+.text-content h2 {font-size:18px; line-height:20px; margin: 0px 0 15px;}
+.text-content #sec-list div {margin: 0 0 20px; font-size: 15px; }
+.main-bg img {height:692px;}
+}
+@media (max-width:991px){
+.header {padding-top:50px; margin-bottom:38px;}
+.main-bg img { height: 693px; }
+.buy {font-size:50px; line-height:60px;  padding:30px 0px 36px;}
+.text-content #sec-list div strong {margin-right:3px;}
+}
+@media (max-width:767px) {
+.header {margin-bottom:10px; padding-top:30px;}
+.content-area img.img-responsive {width:100%;}
+.text-content {margin:20px 0 30px; padding:0px}
+.no-padding-left { padding:0px;}
+.text-content #sec-list div { margin: 0 0 15px; }
+.download { padding: 12px 20px; width: auto;}
+.no-padding-left {padding:0px;}
+.social-sub {width:100%;}
+}
+@media (max-width:480px) {
+.buy { font-size: 36px; line-height: 40px; padding: 30px 0px 25px;}
+.header {margin-bottom:1px; padding-top: 23px;}
+.text-content { margin: 20px 0 23px; }
+.download {width:100%;}
+#upload-video iframe { height: auto;}
+}
+@media (max-width:360px) {
+.buy h1{font-size: 42px;}
+.buy p{font-size: 18px;}
+.social{padding:20px 0;}
+.fb-like{max-width:320px!important;} 
+.countdown-container ul.countdown li {margin-right:5px;}
+}
